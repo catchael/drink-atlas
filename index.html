@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一杯之間收錄在家就能做的台式茶飲、咖啡、奶飲與果飲食譜。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>一杯之間｜飲料圖鑑</title>
+  <script defer src="data/drinks.js"></script>
+  <script defer src="js/shared.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <div class="wrap navigation">
+      <a class="brand" href="index.html"><span aria-hidden="true">◒</span> 一杯之間</a>
+      <a class="nav-link" href="index.html#catalog">飲料圖鑑</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="wrap hero">
+      <div class="hero-copy">
+        <p class="eyebrow" lang="en">THE DRINK ATLAS</p>
+        <h1>把喜歡的飲料，<br><em>帶回家做。</em></h1>
+        <p>從台式茶飲到咖啡與冰沙，翻找今天想喝的一杯。</p>
+        <a class="primary" href="#catalog">逛飲料圖鑑 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/images/drinks/pearl-milk-tea.png" alt="" width="512" height="512">
+      </div>
+    </section>
+    <section class="wrap catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-heading">
+        <h2 id="catalog-title">飲料圖鑑</h2>
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" aria-label="搜尋飲料名稱或材料" placeholder="搜尋飲料名稱或材料"></label>
+      </div>
+      <div class="filters">
+        <div id="categories" class="pills" role="group" aria-label="按飲料分類篩選"></div>
+        <button type="button" id="only-favorites" aria-pressed="false"><span aria-hidden="true">♡</span> 我的收藏</button>
+      </div>
+      <p id="count" class="count" role="status"></p>
+      <div id="cards" class="grid"></div>
+      <div id="empty" class="empty" hidden><p id="empty-message"></p><button type="button" id="reset">查看全部飲料</button></div>
+      <noscript>請啟用 JavaScript 以瀏覽圖鑑。</noscript>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand" href="index.html">一杯之間</a><span>飲料食譜專題 · 插圖由 AI 生成</span></div></footer>
+</body>
+</html>
